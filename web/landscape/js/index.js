@@ -59576,35 +59576,11 @@ lyrtesmudnytbyrsenwegfyrmurtelreptegpecnelnevfes\
 	          'data-date-group': msg.dateGroup,
 	          onMouseEnter: this.mouseenterActivate,
 	          onMouseLeave: this.mouseleaveActivate, __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 78}}
-	          , displayAuthorRow &&
-	            react.createElement(react.Fragment, {__self: this, __source: {fileName: _jsxFileName$d, lineNumber: 84}}
-	              , react.createElement('div', { className: `row align-center ${isPostUpdate && 'mt-3'}`, __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 85}}
-	                , react.createElement('div', { className: "flex-col-2 flex justify-end"  , __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 86}}
-	                  , isPostUpdate &&
-	                    react.createElement(Icon, { type: "icon-collection-post", label: true, __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 88}})
-	                  
-	                )
-	                , react.createElement('div', { className: "flex-col-x", __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 91}}
-	                  , messageDetails.postUrl &&
-	                    react.createElement('a', { className: "text-heading text-500" ,
-	                      href: messageDetails.postUrl, __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 93}}
-	                      , messageDetails.postTitle
-	                    )
-	                  
-	                )
-	                , react.createElement('div', { className: "flex-col-3", __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 99}})
-	              )
-	              , react.createElement('div', { className: "row", __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 101}}
-	                , react.createElement('div', { className: "flex-col-2", __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 102}})
-	                , react.createElement('div', { className: `flex-col-x ${isPostUpdate ? 'mt-1' : 'mt-3'}`, __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 103}}
-	                  , react.createElement('a', { className: "vanilla text-mono text-small text-700"   , href: prettyShip(msg.aut)[1], __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 104}}, prettyShip(`~${msg.aut}`)[0])
-	                )
-	                , react.createElement('div', { className: "flex-col-3", __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 106}})
-	              )
-	            )
 	          
 	          , react.createElement('div', { className: "row", __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 110}}
-	            , react.createElement('div', { className: "flex-col-2", __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 111}})
+              , react.createElement('div', { className: "flex-col-2", __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 103}}
+                , react.createElement('a', { className: "vanilla text-mono text-small text-700"   , href: prettyShip(msg.aut)[1], __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 104}}, prettyShip(`~${msg.aut}`)[0])
+              )
 	            , react.createElement('div', { className: "flex-col-x", __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 112}}
 	              , react.createElement(Message, { details: messageDetails, api: this.props.api, storeReports: this.props.storeReports, pushCallback: this.props.pushCallback, transitionTo: this.props.transitionTo, __self: this, __source: {fileName: _jsxFileName$d, lineNumber: 113}})
 	            )
@@ -66797,17 +66773,7 @@ lyrtesmudnytbyrsenwegfyrmurtelreptegpecnelnevfes\
 	    });
 
 	    if (msg.printship) {
-	      contentElem = (
-	        react.createElement(react.Fragment, {__self: this, __source: {fileName: _jsxFileName$h, lineNumber: 305}}
-	          , react.createElement('a', { className: "vanilla hoverline text-600 text-mono"   , href: prettyShip(msg.aut)[1], __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 306}}, prettyShip(`~${msg.aut}`)[0])
-	          , msg.dateGroup === parseInt(this.state.activatedMsg.dateGroup, 10) &&
-	            react.createElement(react.Fragment, {__self: this, __source: {fileName: _jsxFileName$h, lineNumber: 308}}
-	              , react.createElement(Elapsed, { timestring: parseInt(this.state.activatedMsg.date, 10), classes: "ml-5 mr-2 text-timestamp"  , __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 309}} )
-	              , react.createElement('span', { className: "text-mono text-gray" , __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 310}}, dateToDa(new Date(parseInt(this.state.activatedMsg.date, 10))))
-	            )
-	          
-	        )
-	      );
+	      return react.createElement('div', { key: msg.uid });
 	    } else {
 	      let replyTo;
 
@@ -66828,14 +66794,18 @@ lyrtesmudnytbyrsenwegfyrmurtelreptegpecnelnevfes\
 	           onMouseEnter: this.mouseenterActivate,
 	           onMouseLeave: this.mouseleaveActivate, __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 328}}
 	        , react.createElement('div', { className: "flex-col-2 flex align-center justify-end"   , __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 334}}
-	          , msg.printship &&
-	            react.createElement('a', { className: "vanilla chat-sigil" , href: prettyShip(msg.aut)[1], __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 336}}
+	          , react.createElement('a', { className: "vanilla hoverline text-600 text-mono"   , href: prettyShip(msg.aut)[1], __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 306}}, prettyShip(`~${msg.aut}`)[0])
+	          , react.createElement('a', { className: "vanilla chat-sigil" , href: prettyShip(msg.aut)[1], __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 336}}
 	              , sealDict.getSeal(msg.aut, 18, true)
 	            )
-	          
 	        )
 	        , react.createElement('div', { className: "flex-col-x", __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 341}}
 	          , contentElem
+	          , msg.dateGroup === parseInt(this.state.activatedMsg.dateGroup, 10) &&
+	            react.createElement(react.Fragment, {__self: this, __source: {fileName: _jsxFileName$h, lineNumber: 308}}
+	              , react.createElement(Elapsed, { timestring: parseInt(this.state.activatedMsg.date, 10), classes: "ml-5 mr-2 text-timestamp"  , __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 309}} )
+	              , react.createElement('span', { className: "text-mono text-gray" , __self: this, __source: {fileName: _jsxFileName$h, lineNumber: 310}}, dateToDa(new Date(parseInt(this.state.activatedMsg.date, 10))))
+	            )
 	        )
 	      )
 	    )
